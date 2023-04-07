@@ -25,7 +25,7 @@ function Initialize {
         echo "" > $SESSION
     fi
     echo -e "Netflix检测自动换ip 1.01版"
-    echo -e "https://github.com/Netflixxp/changip"    
+    echo -e "修改自https://github.com/Netflixxp/changip"    
     Test
 }
 
