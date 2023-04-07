@@ -19,11 +19,11 @@
 # 如何使用
 1.下载脚本
 
-	wget -O changip.sh https://raw.githubusercontent.com/Netflixxp/changip/main/changip.sh && chmod +x changip.sh
+	wget -O changip.sh https://raw.githubusercontent.com/gtgc2005/changip/main/changip.sh && chmod +x changip.sh
 
 2.修改changip.sh
 
-	vi changip.sh
+	nano changip.sh
 
 根据提示修改以下内容，其中TG机器人可以不填，但换IP后就不会提醒了
 ```
@@ -57,15 +57,6 @@ telegram 中关注官方 @Botfather ，输入/newbot ，创建新的机器人（
 * TG_CHATID的获取
 
 与机器人@userinfobot 对话可获得。
-
-# 问题反馈
-[TG频道](https://t.me/mffjc)
-
-[TG群组](https://t.me/jcnfnatuo)
-***
-
-# [购买奈飞、YouTube正规合租车](https://jcnf.xyz/nf)
-***
 
 # 感谢
 原作者[yxkumad](https://github.com/yxkumad/streammonkeylite)
