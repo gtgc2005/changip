@@ -3,7 +3,7 @@
 PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 
 # NAME=自己定义，例如HKT,注意保留引号
-NAME="HKT"
+NAME="Hinet"
 
 # API=你更换IP的链接，每家不一样，自己替换，注意保留引号
 API="htts://"
@@ -24,8 +24,8 @@ function Initialize {
     else
         echo "" > $SESSION
     fi
-    echo -e "jcnf Netflix检测自动换ip 1.01版"
-    echo -e "频道 https://t.me/mffjc"    
+    echo -e "Netflix检测自动换ip 1.01版"
+    echo -e "https://github.com/Netflixxp/changip"    
     Test
 }
 
@@ -76,12 +76,12 @@ function AfterCheck {
 }
 
 function SendStartMsg {
-    TGMessage="jcnf %0A频道 https://t.me/mffjc%0A%0A解锁已失效%0A服务器：$NAME"
+    TGMessage="解锁已失效%0A服务器：$NAME"
     curl -s -X POST "https://api.telegram.org/bot$TG_BOT_TOKEN/sendMessage" -d chat_id=$TG_CHATID -d text="$TGMessage" -d parse_mode="HTML" >/dev/null 2>&1
 }
 
 function SendEndMsg {
-    TGMessage="jcnf %0A频道 https://t.me/mffjc%0A%0A已恢复解锁%0A服务器：$NAME%0A尝试次数：$COUNT"
+    TGMessage="已恢复解锁%0A服务器：$NAME%0A尝试次数：$COUNT"
     curl -s -X POST "https://api.telegram.org/bot$TG_BOT_TOKEN/sendMessage" -d chat_id=$TG_CHATID -d text="$TGMessage" -d parse_mode="HTML" >/dev/null 2>&1
 }
 
@@ -91,10 +91,7 @@ function Terminate {
 }
 
 if [ "$1" == "1" ]; then
-    echo -e "[手动] 定制版"
-    echo -e "官网 https://zoecloud.cc"
-    echo -e "频道 https://t.me/zoecloud"
-    echo -e "群组 https://t.me/zoeclouds\n"
+    echo -e "修改自https://github.com/Netflixxp/changip"
     FirstNetflixResult="Originals Only"
     FirstGoogle="CN"
     COUNT=1
